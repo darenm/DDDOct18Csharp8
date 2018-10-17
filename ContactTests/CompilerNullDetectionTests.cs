@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-[module: System.Runtime.CompilerServices.NonNullTypes]
+//[module: System.Runtime.CompilerServices.NonNullTypes]
 namespace ContactTests
 {
     [TestClass]
