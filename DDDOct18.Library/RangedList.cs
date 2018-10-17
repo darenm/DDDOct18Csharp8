@@ -15,7 +15,7 @@ namespace DDDOct18.Library
                 var startPos = DeterminePosition(r.Start);
                 var endPos = DeterminePosition(r.End);
                 var numberOfItems = endPos - startPos;
-                return this.Skip(startPos).Take(numberOfItems);
+                return GetRange(startPos, numberOfItems);
             }
         }
 
