@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DDDOct18.Library;
 
 namespace DDDOct18Patterns
 {

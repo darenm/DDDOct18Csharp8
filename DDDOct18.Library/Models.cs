@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDOct18Patterns
+namespace DDDOct18.Library
 {
     public class Person
     {
@@ -60,13 +60,13 @@ namespace DDDOct18Patterns
 
     public static class DataFactory
     {
-        public static List<Person> GetPeople()
+        public static RangedList<Person> GetPeople()
         {
             var broncosQb = new Quarterback("Case", "Keenum", "Broncos");
             var giantsQb = new Quarterback("Eli", "Manning", "Giants");
             var patriotsQb = new Quarterback("Tom", "Brady", "Patriots");
 
-            return new List<Person> {
+            return new RangedList<Person> {
                 broncosQb,
                 giantsQb,
                 patriotsQb,

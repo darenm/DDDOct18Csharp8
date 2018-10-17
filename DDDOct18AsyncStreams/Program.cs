@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace DDDOct18AsyncStreams
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var service = new TelemetryService();
+
+            foreach await (var item in service.GetTemperatureFromSensors())
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

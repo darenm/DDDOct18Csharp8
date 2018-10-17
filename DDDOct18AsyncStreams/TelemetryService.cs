@@ -1,7 +1,4 @@
-﻿using System;
-
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DDDOct18AsyncStreams
 {
@@ -9,7 +6,7 @@ namespace DDDOct18AsyncStreams
     {
         private Sensor _sensor = new Sensor();
 
-        public async IAsyncEnumerable<int> GetValuesFromServerAsync()
+        public async IAsyncEnumerable<int> GetTemperatureFromSensors()
         {
             while (true)
             {
@@ -26,24 +23,3 @@ namespace DDDOct18AsyncStreams
     }
 }
 
-// Those interfaces will ship as part of .NET Core 3
-namespace System.Collections.Generic
-{
-    public interface IAsyncEnumerable<out T>
-    {
-        IAsyncEnumerator<T> GetAsyncEnumerator();
-    }
-
-    public interface IAsyncEnumerator<out T> : System.IAsyncDisposable
-    {
-        System.Threading.Tasks.ValueTask<bool> MoveNextAsync();
-        T Current { get; }
-    }
-}
-namespace System
-{
-    public interface IAsyncDisposable
-    {
-        System.Threading.Tasks.ValueTask DisposeAsync();
-    }
-}

@@ -6,4 +6,12 @@
 	  <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DDDOct18.Library\DDDOct18.Library.csproj" />
+  </ItemGroup>
+
 </Project>
