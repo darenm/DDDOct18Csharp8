@@ -25,6 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Ranges", "03 - Ranges"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Async Streams", "04 - Async Streams", "{D01B69D9-4EF8-4EA7-B2D8-6D226B10C061}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Presentation", "00 - Presentation", "{F6BDE510-7CE2-46DF-8D5F-83E82621A090}"
+	ProjectSection(SolutionItems) = preProject
+		DDDOct18Csharp8.pptx = DDDOct18Csharp8.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
