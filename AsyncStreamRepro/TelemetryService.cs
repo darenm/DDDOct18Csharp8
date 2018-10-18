@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace DDDOct18AsyncStreams
+namespace AsyncStreamRepro
 {
     public class TelemetryService
     {
@@ -22,4 +24,3 @@ namespace DDDOct18AsyncStreams
         }
     }
 }
-

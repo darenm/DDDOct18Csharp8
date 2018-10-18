@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDOct18AsyncStreams
+namespace AsyncStreamRepro
 {
     public class Sensor
     {

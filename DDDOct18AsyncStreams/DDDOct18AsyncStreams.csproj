@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DDDOct18.Library\DDDOct18.Library.csproj" />
+    <ProjectReference Include="..\DDDOct18.Library.Standard\DDDOct18.Library.Standard.csproj" />
   </ItemGroup>
 
 </Project>

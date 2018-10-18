@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using DDDOct18.Library.Standard;
 
 namespace DDDOct18AsyncStreams
 {
@@ -7,12 +8,7 @@ namespace DDDOct18AsyncStreams
     {
         static async Task Main(string[] args)
         {
-            var service = new TelemetryService();
-
-            foreach await (var item in service.GetTemperatureFromSensors())
-            {
-                Console.WriteLine(item);
-            }
+            await Sample.MainAsync();
         }
     }
 }
